@@ -1,0 +1,414 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+medosa:
+int k,x;
+ cout<<"chose the EX number"<<endl;
+cout<< "________________________________________________\n";
+cout<< "________________________________________________\n";
+cout<<"1.EX(1)\n";
+ cout<<"2.EX(2)\n";
+ cout<<"3.EX(3)\n";
+ cout<<"4.EX(4)\n";
+ cout<< "5.go out\n";
+cout<< "________________________________________________\n";
+cout<< "________________________________________________\n";
+cin>>k;
+switch(k)
+{
+case'1':
+int f;
+cout<< "enter the proplem number\n";
+cout<< "________________________________________________\n";
+cout<< "________________________________________________\n";
+cout<< "11.circle area\n";
+cout<< "12.circle and triangle area and there segma\n";
+cout<< "13.pupile card\n";
+cout<< "________________________________________________\n";
+cout<< "________________________________________________\n";
+switch(f)
+{
+
+
+case'11':
+float area,pi1,r1;
+cout<<"inter half radius\n";
+cin>>r1;
+pi1=3.14;
+area=2*pi1*r1;
+cout<<"the area ="<<area;
+goto medosa ;
+break;
+
+case'12':
+float c , r , pi , t , s ;
+pi =3.14;
+cout<<"enter the half radius\n";
+cin>>r;
+c =pi*r*r;
+cout<<"circle area ="<<c<<endl;
+t =.4333*r*r;
+cout<<"triangle area ="<<t<<endl;
+s = c +t ;
+cout<<"sigma ="<<s<<endl;
+goto medosa ;
+break;
+
+case'13':
+char name1,name2,name3,name4,studyyear,state,section;
+long int univerctie_number;
+cout<< "enter your name from you to grand grandfather\n";
+cin>>name1>>name2>>name3>> name4;
+cout<< "enter your study year\n";
+cin>>studyyear;
+cout<< "enter your univercity number\n";
+cin>>univerctie_number;
+cout<< "enter your state\n";
+cin>>state;
+cout<< "enter your section\n";
+cin>>section;
+cout<< "_________________________________________________________________________________________\n";
+cout<< "                                   khartoum universcity                                   \n";
+cout<< "                               factual of mathmatic since                                \n";
+cout<< "                              "<<section<< "                                             \n\n";
+cout<< "name:"<<name1<<name2<<name3<<name4<<endl;
+cout<< "study year :"<<studyyear<<endl;
+cout<< "universcity number :"<<univerctie_number<<endl;
+cout<< "state :"<<state<<endl;
+cout<< "__________________________________________________________________________________________\n";
+goto medosa ;
+break;
+default:
+cout<< "error  enter the current number";
+goto medosa ;
+}
+case'2':
+int s;
+cout<< "enter the problem number\n";
+cout<< "________________________________________________\n";
+cout<< "\n";
+cout<< "21.secondry equation solution\n";
+cout<< "22.week days with if  else\n";
+cout<< "23.find the area of a triangle\n";
+cout<< "________________________________________________\n";
+cout<< "________________________________________________\n";
+switch(s)
+{
+
+case'21':
+    int q,w,e,r;
+cout<< "enter the first number q";
+cin>>q;
+cout<< "enter the secand number ";
+cin>>w;
+cout<< "enter the third number ";
+cin>>e;
+cout<<q<< "x^2+"<<w<< "x+"<<e<< "=0 \n";
+r=sqrt(w*w-4*q*e);
+cout<< "x1="<<(-w+r/2*q)<<"\n";
+cout<< "x2="<<(-w-r/2*q)<<"\n";
+goto medosa ;
+break;
+
+case'22':
+
+cin>>x;
+if(x=1)
+{
+cout<< " sunday \n";}
+else{
+    if(x=2){
+cout<< "monday\n";}
+else{
+    if(x=3){
+cout<< "tuesday\n";}
+else{
+    if(x=4){
+cout<< "wednesday\n";}
+else{
+    if(x=5){
+cout<< "thursday\n";}
+else{
+    if(x=7){
+cout<< "friday\n";}
+else{
+    if(x=7){
+cout<< "saturday\n";
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+
+goto medosa ;
+break;
+
+case'23':
+
+goto medosa ;
+break;
+
+default:
+cout<< "error enter the current number\n";
+}
+
+case'3':
+int d;
+cout<< "enter the proplem number\n";
+cout<< "________________________________________________\n";
+cout<< "________________________________________________\n";
+cout<< "31.week days with switch\n";
+cout<< "32.bank app\n";
+cout<< "________________________________________________\n";
+cout<< "________________________________________________\n";
+switch(d)
+{
+
+case'31':
+int i;
+cout<< "chose the day number\n"
+<< "sunday=111\n"
+<< "monday=222\n"
+<<"tuesday=333\n"
+<< "wednesday=444\n"
+<< "thursday=555\n"
+<< "friday=666\n"
+<< "saturday=777\n";
+cin>>i;
+switch (i)
+{
+case '111':
+cout<< "sunday";
+break;
+case '222':
+cout<< "monday";
+break;
+case '333':
+cout<< "tuesday";
+break;
+case '444':
+cout<< "wednesday";
+break;
+case '555':
+cout<< "thursday";
+break;
+case '666':
+cout<< "friday";
+break;
+case '777':
+cout<< "saturday";
+break;
+default:
+cout<< "enter the current number";
+
+goto medosa ;
+break;
+}
+case'32':
+int b;
+cout<< "chose the service you want it :\n";
+cout<< "a.";
+cout<< "b.";
+cout<< "c.";
+cin>>b;
+switch(b)
+{
+case 'a':
+    char u;
+cout<< "chose the service you want it :\n";
+cout<< "a1.cash\n" ;
+cout<< "a2.chek\n" ;
+cin>>u;
+    switch(u)
+{
+    int x;
+case 'a1':
+
+cout<< "dear bank customer your balance is 25000 pound \n ";
+cout<<"enter the number of money you want to take it\n";
+cin>>x;
+cout<<"your balance now is ";
+cout<<25000-x ;
+goto medosa ;
+
+case 'a2':
+cout<< "dear bank customer your balance is 25000 pound \n ";
+cout<<"enter the number of money you want to take it\n";
+cout<< "check this sheik is it all right \n";
+cin>>x;
+cout<<"your balance now is ";
+cout<<25000-x ;
+goto medosa ;
+default:
+cout<< "enter the correct number";
+goto medosa;
+
+}
+
+case 'b':
+    char o;
+cout<< "chose the service you want it :\n";
+cout<< "b1.cash\n";
+cout<< "b2.sheik\n";
+cin>>o;
+    switch(o)
+    {
+        int x;
+case 'b1':
+cout<< "dear bank customer your balance is 25000 pound \n ";
+cout<<"enter the number of money you want to give us it\n";
+cout<< "give us the cash to count it";
+cin>>x;
+cout<<"your balance now is ";
+cout<<25000+x ;
+goto medosa ;
+break;
+case 'b2':
+cout<< "dear bank customer your balance is 25000 pound \n ";
+cout<<"enter the number of money you want to give us it\n";
+cout<< "give us the sheik to check it";
+cin>>x;
+cout<<"your balance now is ";
+cout<<25000+x ;
+goto medosa ;
+break;
+default:
+cout<< "enter the correct number";
+goto medosa;
+}
+
+
+case 'c':
+    char p,name5,name6,name7,name8;
+    int x11,c;
+cout<< "enter your name :";
+cin>>name5>>name6>>name7>>name8;
+cout<<"enter your age\n";
+cin>>x11;
+cout<< "chose the service you want to execute it:\n";
+cout<< "c1.dollar\n";
+cout<< "c2.uro\n";
+cout<< "c3.reyal\n";
+cout<< "c4.deinar\n";
+cout<< "c5.pound\n";
+cin>>p;
+    switch(p)
+    {
+case 'c1':
+cout<< "howmeny dollars you want deposit\n";
+cin>>c;
+cout<< c<<"\n";
+cout<<name5<<name6<<name7<<name8 <<"\n";
+cout<< "your account now is ready to use it with dollar \n";
+goto medosa ;
+
+case 'c2':
+cout<< "howmeny uro you want paid it\n";
+cin>>c;
+cout<< c<<"\n";
+cout<<name5<<name6<<name7<<name8 <<"\n";
+cout<< "your account now is ready to use it with uro \n";
+goto medosa ;
+
+case 'c3':
+cout<< "howmeny reyal you want paid it\n";
+cin>>c;
+cout<< c<<"\n";
+cout<<name5<<name6<<name7<<name8 <<"\n";
+cout<< "your account now is ready to use it its with reyal \n";
+goto medosa ;
+
+case 'c4':
+cout<< "how many deinar you want paid it\n";
+cin>>c;
+cout<< c<<"\n";
+cout<<name5<<name6<<name7<<name8 <<"\n";
+cout<< "your account now is ready to use it its with deinar \n";
+goto medosa ;
+
+case 'c5':
+cout<< "howmeny pound you want paid it\n";
+cin>>c;
+cout<< c<<"\n";
+cout<<name5<<name6<<name7<<name8 <<"\n";
+cout<< "your account now is ready to use it its with pound \n";
+goto medosa ;
+
+default:
+cout<< "enter the correct number";
+goto medosa;
+    }
+default:
+cout<< "enter the correct number";
+goto medosa;
+}
+default:
+cout<< "error enter the current number\n";
+goto medosa ;
+}
+
+case'4':
+int j;
+cout<< "enter the proplem number\n";
+cout<< "________________________________________________\n";
+cout<< "________________________________________________\n";
+cout<< "41.find the area and medium area for 4 circle\n";
+cout<< "42.find the area and medium area for x circle\n";
+cout<< "________________________________________________\n";
+cout<< "________________________________________________\n";
+cin>>j;
+switch(j)
+{
+case'41':
+float i2=1,j2,value2, sum2;
+sum2=0;
+cout<<"enter the circle number \n";
+while(i2<=4)
+{
+cout<< "enter the circle number \n"<<i2<<"vaule \n";
+cin>>value2;
+sum2=sum2+value2;
+    i2++;
+    }
+cout<<ceil(sum2/4);
+goto medosa ;
+
+case'42':
+float i1=1,j1,value1, sum1;
+sum1=0;
+cout<<"enter the circle number \n";
+cin>>j1;
+while(i1<=j1)
+{
+cout<< "enter the circle number \n"<<i1<<"value \n";
+cin>>value1;
+sum1=sum1+value1;
+    i1++;
+    }
+cout<<ceil(sum1/j1);
+goto medosa ;
+
+
+default:
+cout<< "error enter the current number\n";
+goto medosa ;
+}
+case '5':
+cout<<"goodbye\n";
+break;
+
+
+default:
+cout<< "error enter the current number\n";
+goto medosa ;
+}
+
+
+
+    return 0;
+}
